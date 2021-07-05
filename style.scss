@@ -1,0 +1,189 @@
+$blue: hsl(223, 87%, 63%);
+$bale-blue: hsl(223, 100%, 88%);
+$light-red: hsl(354, 100%, 66%);
+$gray: hsl(0, 0%, 59%);
+$very-dark-blue: hsl(209, 33%, 12%);
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+}
+
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+
+
+
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding-top: 8.5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    .logo {
+        padding-bottom: 5.5rem;
+    }
+    .title {
+        font-size: 5rem;
+        color: $very-dark-blue;
+        font-weight: 700;
+        padding-bottom: 2.5rem;
+        span {
+            color: $gray;
+            font-weight: 300;
+        }
+    }
+    .desc {
+        padding-bottom: 4rem;
+    }
+    .form {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 9rem;
+        input {
+            border: 0;
+            outline: none;
+            display: block;
+            padding: 2rem 3rem;
+            border: 1px solid #cdd5e8;
+            border-radius: 4rem;
+            font-size: 2rem;
+            font-family: 'Libre Franklin', sans-serif;
+            &::placeholder {
+                font-size: 2rem;
+                color: #cdd5e8;
+                font-family: 'Libre Franklin', sans-serif;
+            }
+        }
+        .email {
+            width: 67%;
+            input[type='text'] {
+                width: 100%;
+            }
+            .message {
+                font-size: 1.4rem;
+                font-style: italic;
+                font-weight: 600;
+                text-align: left;
+                color: $light-red;
+                padding-left: 2rem;
+                padding-top: 1rem;
+            }
+        }
+        input[type='submit'] {
+            width: 31%;
+            color: #fff;
+            font-weight: 600;
+            background-color: $blue;
+            box-shadow: 0px 5px 5px 0px $bale-blue;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+                background-color: hsla(223, 87%, 63%, 0.671);
+            }
+        }
+    }
+    .dashboard {
+        img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        }
+        padding-bottom: 9.5rem;
+    }
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5rem;
+        span {
+            position: relative;
+            width: 3rem;
+            height: 3rem;
+            border: 1px solid #cdd5e8;
+            border-radius: 50%;
+            margin-left: 0.75rem;
+            margin-right: 0.75rem;
+            color: $blue;
+            cursor: pointer;
+            transition: all 0.5s;
+            &:hover {
+                background-color: $blue;
+                color: #fff;
+            }
+        }
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.6rem;
+        }
+    }
+    .copyright {
+        color: $gray;
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 17rem 1rem 7.5rem;
+        .logo {
+            padding-bottom: 9rem;
+        }
+        .title {
+            font-size: 4rem;
+            padding-bottom: 4rem;
+        }
+        .desc {
+            padding-bottom: 6.5rem;
+        }
+        .form {
+            display: block;
+            margin-bottom: 14rem;
+            input {
+                padding: 3rem 6.5rem;
+            }
+            .email {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+            input[type='submit'] {
+                width: 100%;
+            }
+        }
+        .dashboard {
+            padding-bottom: 26rem;
+        }
+        .social {
+            span {
+                width: 6rem;
+                height: 6rem;
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+            }
+            i {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+

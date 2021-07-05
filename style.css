@@ -1,0 +1,180 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding-top: 8.5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+.container .logo {
+  padding-bottom: 5.5rem;
+}
+.container .title {
+  font-size: 5rem;
+  color: #151f29;
+  font-weight: 700;
+  padding-bottom: 2.5rem;
+}
+.container .title span {
+  color: #969696;
+  font-weight: 300;
+}
+.container .desc {
+  padding-bottom: 4rem;
+}
+.container .form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 9rem;
+}
+.container .form input {
+  border: 0;
+  outline: none;
+  display: block;
+  padding: 2rem 3rem;
+  border: 1px solid #cdd5e8;
+  border-radius: 4rem;
+  font-size: 2rem;
+  font-family: "Libre Franklin", sans-serif;
+}
+.container .form input::placeholder {
+  font-size: 2rem;
+  color: #cdd5e8;
+  font-family: "Libre Franklin", sans-serif;
+}
+.container .form .email {
+  width: 67%;
+}
+.container .form .email input[type=text] {
+  width: 100%;
+}
+.container .form .email .message {
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 600;
+  text-align: left;
+  color: #ff5263;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.container .form input[type=submit] {
+  width: 31%;
+  color: #fff;
+  font-weight: 600;
+  background-color: #4f7df3;
+  box-shadow: 0px 5px 5px 0px #c2d3ff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.container .form input[type=submit]:hover {
+  background-color: rgba(79, 125, 243, 0.671);
+}
+.container .dashboard {
+  padding-bottom: 9.5rem;
+}
+.container .dashboard img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.container .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.container .social span {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #cdd5e8;
+  border-radius: 50%;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  color: #4f7df3;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.container .social span:hover {
+  background-color: #4f7df3;
+  color: #fff;
+}
+.container .social i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+}
+.container .copyright {
+  color: #969696;
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 17rem 1rem 7.5rem;
+  }
+  .container .logo {
+    padding-bottom: 9rem;
+  }
+  .container .title {
+    font-size: 4rem;
+    padding-bottom: 4rem;
+  }
+  .container .desc {
+    padding-bottom: 6.5rem;
+  }
+  .container .form {
+    display: block;
+    margin-bottom: 14rem;
+  }
+  .container .form input {
+    padding: 3rem 6.5rem;
+  }
+  .container .form .email {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .container .form input[type=submit] {
+    width: 100%;
+  }
+  .container .dashboard {
+    padding-bottom: 26rem;
+  }
+  .container .social span {
+    width: 6rem;
+    height: 6rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .container .social i {
+    font-size: 2.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
